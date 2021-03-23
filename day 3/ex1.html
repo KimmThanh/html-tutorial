@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+	<h2> Thanh Toán </h2>
+	<form action="action.php" method="post">
+		<label for="fname"> Tên đầy đủ </label>
+		<input type="fname" name="fname" value=" nhập đầy đủ họ tên" required></br></br>
+		<label for="password"> Password </label>
+		<input type="password" name="password" value="nhập password"></br></br>
+		<label for="email"> Email</label>
+		<input type="email" name="email" value=" nhập email" required></br></br>
+		<label for="date"> Ngày sinh</label>
+		<input type="datetime" name="date" value="date" required></br></br>
+		<label for="iteams"> Mặt hàng mua </label>
+		<input list="iteams" name="iteams">
+			<datalist id="iteams">
+				<option value="Shoes">Shoes</option>
+				<option value="socks">Socks</option>
+				<option value="Shirt">Shirt</option>
+				<option value="Sandals">Sandals</option>
+				<option value="Trousers">Trousers</option>
+			</datalist></br></br>
+		<label for="number">số lượng mua</label>
+		<input type="number" value="number" min="1" max="5"></br></br>
+		<label for="number">Bán kính vận chuyển</label>
+		<input type="range" name="number" min="10" max="20"></br></br>
+		<button type="button">đăng kí</label>
+		
+</body>
+</html>
