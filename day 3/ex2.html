@@ -8,15 +8,15 @@
 	<fieldset>
 		<legend> Personal </legend>
 			<label for="fname">Name:</label>
-			<input type="fname" name="name" value="enter name here"><label></br>
+			<input type="fname" name="name" placeholder="enter name here"><label></br>
 			<label for="address"> Address</label>
-			<input type="address" name="address" value="enter address here"></label></br>
+			<input type="address" name="address" placeholder="enter address here"></label></br>
 			<label for="email"> Email </label>
-			<input type="email" name="emai" value="enter email here"></label></br>
+			<input type="email" name="emai" placeholder="enter email here"></label></br>
 			<label for="number">phone number</label>
-			<input type="number" name="number" value="enter 10 ditig number"></label></br>
+			<input type="number" name="number" placeholder="enter 10 ditig number"></label></br>
 			<label for="iq">IQ</label>
-			<input type="number" name="iq" value="number"></label></br>
+			<input type="number" name="iq"></label></br>
 			<label for="gender">Gender</label></br>
 			<input type="radio" name="gender" value="male"> male</label></br>
 			<input type="radio"name="gender" value="female"> Female</label></br>
@@ -24,21 +24,41 @@
 			<label for="proposed"> Date of Proposed Outing:</label>
 			<input type="date" id="start" name="trip-start" value="date"></label>
 	</fieldset>
-	<p> Check All That Apply <p>
-	<form action="acton.php" method="post">
-		<input type="checkbox" name="vehicle1">
-		<label for="vehicle1" > I have tattoos and/or piercings</label></br>
-		<input type="checkbox" name="vehcile2">
-		<label for="vehicle2"> I am more than 2 years older than my daughter</label></br>
-		<input type="checkbox" name="vehicle3">
-		<label for="vehicle3"> I own a panel van or V8 ute </label></br>
-		<input type="checkbox" name="vehicle4">
-		<label for="vehicle4"> I work my full time</label></br>
-		<input type="checkbox" name="vehicle5">
-		<label for="vehicle5"> My parents are rich</label></br>
-		<input type="checkbox" name="vahicle6">
-		<label for="vahicle6"> Is the date at a well lit public location</label></br>
-	</form>
+	<table border="1">
+		<p> Check All That Apply <p>
+		<form action="acton.php" method="post">
+			<input type="checkbox" name="apply1">
+			<label for="apply1" > I have tattoos and/or piercings</label></br>
+			<input type="checkbox" name="apply2">
+			<label for="apply2"> I am more than 2 years older than my daughter</label></br>
+			<input type="checkbox" name="apply3">
+			<label for="apply3"> I own a panel van or V8 ute </label></br>
+			<input type="checkbox" name="apply4">
+			<label for="apply4"> I work my full time</label></br>
+			<input type="checkbox" name="apply5">
+			<label for="apply5"> My parents are rich</label></br>
+			<input type="checkbox" name="apply6">
+			<label for="apply6"> Is the date at a well lit public location</label></br>
+		</form>
+	<div {
+		}
+		<form action="action.php" method="post">
+			<label> Political Persuasion: </label>
+			<select id="iteams" name="iteams">
+				<option value="Left Wing">Left Wing</option>
+				<option value="Right Wing">Right Wing</option>
+				<option value="Conservative">Conservative</option>
+				<option value="Nazi">Nazi</option>
+			</select>
+			<label> Education Level </label>
+			<select id="level" name="school level">
+				<option value="University">University</option>
+				<option value="College">College</option>
+				<option value="High School">High School</option>
+				<option value=" None"> None</option>
+			</select>
+		</form>
+	</table>
 		
 </body>
 </html>
